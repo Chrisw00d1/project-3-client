@@ -9,6 +9,8 @@ function headers() {
 }
 
 export function getAllPl8s() {
+  console.log(baseUrl)
+  console.log(process.env.NODE_ENV)
   return axios.get(`${baseUrl}/pl8s`)
 }
 
